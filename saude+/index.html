@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/medical-team.png" type="image/x-icon">
+  <title>Saúde+</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <h1 class="cabecalho__logo-inicio">Saúde<span>+</span></h1>
+        </a>
+  
+        <!-- Botão de Menu Hambúrguer (aparece em telas pequenas) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Lista de Navegação -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Aqui removemos o 'Sobre' e 'Serviços' para o menu hambúrguer mostrar apenas os botões 'Abrir conta' e 'Acessar conta' -->
+            <li class="nav-item d-lg-none">
+              <a href="./pages/abrir-conta-form.html" class="btn btn-primary w-100">Abrir conta</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a href="#" class="btn btn-outline-primary w-100">Acessar conta</a>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Caixa de Pesquisa - Centralizada -->
+        <div class="cabecalho__pesquisa-container input-group">
+          <input class="form-control cabecalho__pesquisa" type="search" placeholder="Busque aqui" aria-label="Search">
+          <span class="input-group-text bg-white border-start-0">
+            <img src="./img/ícone busca.png" alt="Ícone de busca" style="width: 18px; height: 18px; cursor:pointer;">
+          </span>
+        </div>
+        
+        
+        <!-- Botões na versão Desktop -->
+        <div class="navbar-nav d-none d-lg-flex ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/abrir-conta-form.html" class="btn btn-primary">Abrir conta</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn btn-outline-primary">Acessar conta</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+<!-- Banner principal -->
+
+  <section class="banner">
+
+    <img src="./img/banner/banner-principal.png" alt="">
+
+  </section>
+
+  <!-- Planos -->
+
+  <section class="planos container py-5">
+
+    <h2 class="text-center mb-5 display-6 fw-semibold text-uppercase verde-principal">
+      Nossos Planos
+    </h2>
+
+    <div class="row justify-content-center gy-4 ">
+
+      <!-- Card 1 -->
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="card text-center">
+          <img src="./img/planos/empresarial.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h2 class="card-title fs-5 verde-principal">Plano Coletivo Empresarial</h2>
+            <p class="card-text">Ideal para empresas que desejam oferecer assistência médica de qualidade
+              aos seus colaboradores.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="card text-center">
+          <img src="./img//planos/adesao.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h2 class="card-title fs-5 verde-principal">Plano Coletivo por Adesão</h2>
+            <p class="card-text">Perfeito para profissionais ligados a entidades de classe ou sindicatos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="card text-center">
+          <img src="./img/planos/servidor.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h2 class="card-title fs-5 verde-principal">Plano Servidor</h2>
+            <p class="card-text">Especialmente desenvolvido para servidores públicos municipais.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="card text-center">
+          <img src="./img/planos/odontologia.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h2 class="card-title fs-5 verde-principal">Odontológico</h2>
+            <p class="card-text">Plano odontológico completo para cuidados com a saúde bucal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Direfencial -->
+
+  <section class="pb-4 mt-5 diferencial">
+    <h2 class="text-center py-3 display-6 fw-semibold text-uppercase">Conheça nosso diferencial</h2>
+
+    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-5 px-3">
+
+      <!-- Card 1 -->
+      <div class="divs-facilidades text-center">
+        <img src="./img/banner/local.png" alt="" class="img-fluid mb-2">
+        <div class="fw-bold">REDE EM TODO O BRASIL</div>
+        <div class="texto-menor">Atendemos em todos os estados.</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="divs-facilidades text-center">
+        <img src="./img/banner/fachada-de-casa-de-familia.png" alt="" class="img-fluid mb-2">
+        <div class="fw-bold">CONFORTO DE CASA</div>
+        <div class="texto-menor">Atendemos em sua casa.</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="divs-facilidades text-center">
+        <img src="./img/banner/estetoscopio.png" alt="" class="img-fluid mb-2">
+        <div class="fw-bold">TODAS AS ESPECIALIDADES</div>
+        <div class="texto-menor">Cobrimos todas as especialidades.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Atendimento -->
+
+  <section class="container py-5">
+    <h2 class="text-center mb-5 display-6 fw-semibold text-uppercase verde-principal">
+      Atendimento virtual
+    </h2>
+  
+    <div class="row justify-content-center gy-4">
+      <!-- Card 1 -->
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="card text-center" style="width: 15rem;"> <!-- Reduzido -->
+          <img src="./img/atendimento/carteira-de-motorista.png" class="mx-auto d-block py-3 img-menor" style="width: 60%;" alt="Carteira Digital">
+          <div class="card-body">
+            <p class="card-text py-4">Carteira Digital</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="card text-center" style="width: 15rem;"> <!-- Reduzido -->
+          <img src="./img/atendimento/hospital.png" class="mx-auto d-block py-3 img-menor alinhamento-ajuste" style="width: 60%; height: 100%;" alt="Redes próximas">
+          <div class="card-body">
+            <p class="card-text">Redes próximas</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="card text-center" style="width: 15rem;"> <!-- Reduzido -->
+          <img src="./img/atendimento/produto-de-codigo-de-barras.png" class="mx-auto d-block py-3 img-menor" style="width: 60%;" alt="2ª Via do Boleto">
+          <div class="card-body">
+            <p class="card-text mt-4">2ª Via do Boleto</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="card text-center" style="width: 15rem;"> <!-- Reduzido -->
+          <img src="./img/atendimento/questao.png" class="mx-auto d-block py-3 img-menor alinhamento-ajuste" style="width: 50%; height: 80%;" alt="Outras Dúvidas">
+          <div class="card-body">
+            <p class="card-text">Outras Dúvidas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Banner secundário -->
+
+  <section class="banner banner-alterado mt-3">
+
+    <img src="./img/banner/banner-secundario.png" alt="">
+
+  </section>
+
+  <!-- Por que confiar na Saude+ -->
+
+  <section class="parceiros py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4 display-6 fw-semibold text-uppercase">Por que confiar na Saúde+</h2>
+      <p class="mb-5 lead">Mais de <strong>500 mil vidas atendidas</strong>, com excelência e carinho em cada
+        atendimento.</p>
+
+      <div class="row justify-content-center text-center gy-4">
+        <div class="col-6 col-md-3">
+          <img src="./img/banner/dados-pessoais.png" alt="Segurança" style="width: 50px;">
+          <h5 class="mt-3">Segurança Garantida</h5>
+          <p class="small text-muted">Proteção de dados e atendimento humanizado.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="./img/banner/agilidade.png" alt="Atendimento Rápido" style="width: 50px;">
+          <h5 class="mt-3">Atendimento Ágil</h5>
+          <p class="small text-muted">Tempo médio de espera de apenas 15 minutos.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="./img/banner/rede.png" alt="Rede Nacional" style="width: 50px;">
+          <h5 class="mt-3">Rede Nacional</h5>
+          <p class="small text-muted">Clínicas e hospitais parceiros em todo o Brasil.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="./img/banner/enquete.png" alt="Satisfação" style="width: 50px;">
+          <h5 class="mt-3">98% de Satisfação</h5>
+          <p class="small text-muted">Clientes que indicam e confiam na Saúde+.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+
+  <footer class="footer-saude mt-5">
+    <div class="container py-5">
+      <div class="row gy-4">
+
+        <!-- Logo e missão -->
+        <div class="col-12 col-md-4">
+          <h4 class="fw-bold">Saúde+</h4>
+          <p class="small text-muted">Cuidando da sua saúde com qualidade, humanização e responsabilidade.</p>
+        </div>
+
+        <!-- Institucional -->
+        <div class="col-6 col-md-2">
+          <h6 class="fw-semibold mb-3">Institucional</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-muted text-decoration-none">Quem somos</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Projetos sociais</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Trabalhe conosco</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Imprensa</a></li>
+          </ul>
+        </div>
+
+        <!-- Ajuda -->
+        <div class="col-6 col-md-2">
+          <h6 class="fw-semibold mb-3">Ajuda</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-muted text-decoration-none">Central de atendimento</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Dúvidas frequentes</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Política de privacidade</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Ouvidoria</a></li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div class="col-12 col-md-4">
+          <h6 class="fw-semibold mb-3">Fale Conosco</h6>
+          <p class="small text-muted mb-1">0800 000 0000</p>
+          <p class="small text-muted mb-1">(21) 0000-0000</p>
+          <p class="small text-muted">ouvidoria@saude+.com.br</p>
+
+          <!-- Redes Sociais -->
+          <div class="mt-3">
+            <a href="#" class="text-muted me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-muted me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-muted"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="text-muted my-4">
+
+      <div class="text-center small text-muted">
+        <p class="fw-bold">2025<i class="bi bi-c-circle mx-1 fw-bold"></i></p>
+        <p class="fw-bold">Saúde+ | Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
