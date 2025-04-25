@@ -1,0 +1,8 @@
+.footer-saude {
+    background-color: var(--verde-secundario);
+    color: #fff;
+}
+
+.footer-saude a:hover {
+    color: var(--verde-principal);
+}
